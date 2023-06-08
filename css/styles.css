@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.ui_frame {
+    height: 80%;
+    width: 30%;
+    background-color: antiquewhite;
+}
+.output_window{
+    height: 25%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input_window {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+.dial_pad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    height: 100%;
+}
+.dial_pad :last-child {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+.operations_pad {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    width: 30%;
+}
+.circluar_container {
+    cursor: default;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+.output_frame{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 50px;
+    width: 65%;
+    background-color: beige;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+.reset_button{
+    cursor: default;
+    width: 70px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    background-color: blue;
+}
